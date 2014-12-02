@@ -1,5 +1,9 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+
+// TODO: Support deep objects
 
 namespace iyates
 {
@@ -34,7 +38,7 @@ namespace iyates
             var objs = new List<Dictionary<string, object>>();
 
             using (var sr = new StringReader(str))
-            using (var tr = new Newtonsoft.Json.JsonTextReader(sr))
+            using (var tr = new JsonTextReader(sr))
             {
                 tr.Read();
                 if (tr.TokenType == JsonToken.StartArray)

@@ -41,3 +41,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+/src/NOSJ.Tests/NOSJ.Tests/bin
+/src/NOSJ.Tests/NOSJ.Tests/obj
+/src/NOSJ.Tests/packages/Newtonsoft.Json.6.0.6
